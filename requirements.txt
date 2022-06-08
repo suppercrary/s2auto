@@ -1,0 +1,11 @@
+requests
+wheel
+robotframework
+robotframework-seleniumlibrary
+robotframework-requests
+robotframework-xvfb
+pyyaml
+selenium
+selenium-wire
+robotframework-imaplibrary2
+chromedriver-autoinstaller

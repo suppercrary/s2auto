@@ -1,0 +1,21 @@
+Login:
+  input_user_name: "xpath://input[@id='usernameOrEmailAddress']"
+  input_password: "xpath://input[@id='Password']"
+  button_login: "LoginButton"
+  message_error_user_name: "xpath://span[@id='usernameOrEmailAddress_validationMessage']"
+  message_error_password: "xpath://span[@id='Password_validationMessage']"
+  message_error_from: "xpath://span[@class='summaryValidateMessage']"
+  title_from_login: "xpath://div[@class='dv-title']"
+ChooseStore:
+  text_title_from: "xpath://span[@class='k-window-title']"
+  select_choose_store: "xpath://span[contains(@class,'k-picker k-dropdownlist k-picker-solid k-picker-md k-rounded-md')]"
+  option_choose_store: "xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[6]"
+  button_next_choose_store: "xpath://button[contains(@id,'btnSaveChooseStoreForUser')]"
+  button_cancel_choose_store: "xpath://button[@id='btnCancelChooseStoreForUser']"
+  message_error_from: "xpath://span[@id='ddlChooseStoreId_validationMessage']"
+  text_title: "xpath=//h2[normalize-space()='SAMPLE DASHBOARD']"
+Unit:
+  menu_category: "xpath://*[@id='mMenu']/li[8]"
+Page to product list:
+  select_choose_product: "xpath://div[contains(@class,' icon-menu-QLSP ')]"
+

@@ -1,0 +1,4 @@
+CreateProduct:
+   text_title: "xpath=//h2[normalize-space()='SAMPLE DASHBOARD']"
+   select_product: "xpath=//ul[contains(@id,'mMenu')]/li[1]"
+   option_product: "xpath=//"
