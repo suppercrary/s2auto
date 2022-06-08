@@ -1,0 +1,13 @@
+Login:
+  input_user_name: "xpath://input[@id='usernameOrEmailAddress']"
+  input_password: "xpath://input[@id='Password']"
+  button_login: "LoginButton"
+  message_error_user_name: "xpath://span[@id='usernameOrEmailAddress_validationMessage']"
+  message_error_password: "xpath://span[@id='Password_validationMessage']"
+  message_error_from: "xpath://span[@class='summaryValidateMessage']"
+  title_from_login: "xpath://div[@class='dv-title']"
+Unit:
+  menu_category: "xpath://*[@id='mMenu']/li[8]"
+Page to product list:
+  select_choose_product: "xpath://div[contains(@class,' icon-menu-QLSP ')]"
+

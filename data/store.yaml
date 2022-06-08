@@ -1,0 +1,12 @@
+no_choose_store:
+  error_message: "Vui lòng chọn cửa hàng trước khi tiếp tục"
+
+choose_store_successfully:
+  option_choose_store1: "cửa hàng 2"
+  option_choose_store2: "CH1"
+  option_choose_store3: "ch2"
+  option_choose_store4: "ch1"
+  option_choose_store5: "CH2"
+  option_choose_store6: "Cửa hàng 1"
+
+choose_store_random_successfully:

@@ -1,0 +1,28 @@
+user_login_successfully:
+  user_name: "quanlyct"
+  password: "quanlyCT1"
+user_login_null_user_name:
+  user_name: ""
+  password: "Dangdanh1"
+  error_message: "Tên đăng nhập không được để trống"
+user_login_null_password:
+  user_name: "dangdanh"
+  password: ""
+  error_message: "Mật khẩu không được để trống"
+user_login_null_user_name_and_password:
+  user_name:  ""
+  password: ""
+  error_message_user_name:  "Tên đăng nhập không được để trống"
+  error_message_password:  "Mật khẩu không được để trống"
+user_login_error_user_name:
+  user_name: "dangdan"
+  password: "Dangdanh1"
+  error_message: "Tên đăng nhâp hoặc mật khẩu không chính xác"
+user_login_error_password:
+  user_name:  "dangdanh"
+  password: "123456789"
+  error_message:  "Tên đăng nhâp hoặc mật khẩu không chính xác"
+user_login_error_user_name_and_password:
+  user_name: "AA"
+  password: "123456789"
+  error_message: "Tên đăng nhâp hoặc mật khẩu không chính xác"
