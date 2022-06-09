@@ -4,14 +4,16 @@ from SeleniumLibrary import SeleniumLibrary
 
 import os
 import sys
+import random
 
 dir_name = os.path.dirname(__file__).replace(f"{os.sep}libs", "")
 sys.path.append(dir_name)
-from core_libs.DataHelper import locators
+
 from core_libs.DataHelper import locators_choose
 
 store_locators = locators_choose.get("ChooseStore")
 
+store_locators1 = locators_choose.get("ChooseStore1")
 
 class StoreModel:
     def __init__(self):
@@ -19,21 +21,6 @@ class StoreModel:
 
     def set_driver(self, driver: SeleniumLibrary):
         self.driver = driver
-
-    def title_choose_store(self,test=False):
-        self.driver.wait_until_page_contains_element(
-            store_locators.get("text_title_from"), timeout="30s"
-        )
-        if test is False:
-            sleep(3)
-            self.driver.click_element(store_locators.get("button_next_choose_store"))
-            self.driver.wait_until_page_contains_element(
-                store_locators.get("button_next_choose_store"), timeout="20s"
-            )
-            self.driver.wait_until_element_is_visible(
-                store_locators.get("button_next_choose_store"), timeout="10s"
-            )
-            self.driver.click_element(store_locators.get("button_next_choose_store"))
 
     def choose_store(self, test=False):
         self.driver.wait_until_page_contains_element(
@@ -75,5 +62,29 @@ class StoreModel:
             text,
         )
 
+    def title_choose_store(self, test=False):
+        self.driver.wait_until_page_contains_element(
+            store_locators.get("text_title_from"), timeout="30s"
+        )
+        if test is False:
+            sleep(3)
+            self.driver.click_element(store_locators.get("button_next_choose_store"))
+            self.driver.wait_until_page_contains_element(
+                store_locators.get("button_next_choose_store"), timeout="20s"
+            )
+            self.driver.wait_until_element_is_visible(
+                store_locators.get("button_next_choose_store"), timeout="10s"
+            )
+            self.driver.click_element(store_locators.get("button_next_choose_store"))
+
     def random_choose_store(self):
-        self.driver.get_elements(store_locators.get("option_choose_store1"))
+        self.driver.wait_until_page_contains_element(
+            store_locators1.get("text_title_from"), timeout="20s"
+        )
+        self.driver.wait_until_page_contains_element(
+            store_locators1.get("select_choose_store"), timeout="30s"
+        )
+        self.driver.get_element_attribute(store_locators1.get("))
+
+
+

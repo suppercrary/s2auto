@@ -15,3 +15,8 @@ No Choose store
     title choose store
     ${data}=                          Set Variable             ${no_choose_store}
     check message error from choose store   ${data.error_message}
+
+choose random
+    random choose store
+    CLICK BUTTON NEXT CHOOSE STORE
+

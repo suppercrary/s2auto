@@ -13,5 +13,8 @@ Case_1: No Choose store
 Case_2: Choose store successfully
    Choose store successfully
 
+Case_3: Choose random successfully
+    choose random
+
 
 
