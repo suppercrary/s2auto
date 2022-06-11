@@ -1,7 +1,7 @@
 ChooseStore:
   text_title_from: "xpath://span[@class='k-window-title']"
   select_choose_store: "xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]"
-  option_choose_store: "xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[6]"
+  option_choose_store: "xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[1]"
   button_next_choose_store: "xpath://button[contains(@id,'btnSaveChooseStoreForUser')]"
   button_cancel_choose_store: "xpath://button[@id='btnCancelChooseStoreForUser']"
   message_error_from: "xpath://span[@id='ddlChooseStoreId_validationMessage']"
@@ -10,5 +10,6 @@ ChooseStore:
 ChooseStore1:
   text_title_from: "xpath://span[@class='k-window-title']"
   select_choose_store: "xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]"
-  option: "xpath=//ul[contains(@id,'ddlChooseStoreId_listbox')]"
+  random_choose_store: "xpath://li[contains(@class,'k-list-item')]"
+  name_choose_store: "xpath://span[contains(@class,'k-list-item-text')]"
 

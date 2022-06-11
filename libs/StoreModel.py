@@ -79,12 +79,38 @@ class StoreModel:
 
     def random_choose_store(self):
         self.driver.wait_until_page_contains_element(
-            store_locators1.get("text_title_from"), timeout="20s"
+            store_locators1.get("text_title_from"), timeout="30s"
         )
         self.driver.wait_until_page_contains_element(
             store_locators1.get("select_choose_store"), timeout="30s"
         )
-        self.driver.get_element_attribute(store_locators1.get("))
+        self.driver.click_element(store_locators1.get("select_choose_store"))
+        sleep(3)
+        t = self.driver.find_elements(store_locators1.get("random_choose_store"))
+        self.driver.click_element(random.choice(t))
+
+    def check_name_store(self):
+        self.driver.wait_until_page_contains_element(
+            store_locators1.get("text_title_from"), timeout="30s"
+        )
+        self.driver.wait_until_page_contains_element(
+            store_locators1.get("select_choose_store"), timeout="30s"
+        )
+        self.driver.click_element(store_locators1.get("select_choose_store"))
+        sleep(3)
+        t = self.driver.find_elements(store_locators1.get("name_choose_store"))
+
+        for i in t:
+            if self.driver.get_text(i) == "ch1111": # input tên cửa hàng muốn login
+                self.driver.click_element(i)
+        # if cửa hàng muốn vào không có trong danh sách thì mặc định vào cửa hàng 1
+        self.driver.click_element(store_locators.get("option_choose_store"))
+
+
+
+
+
+
 
 
 

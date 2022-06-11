@@ -7,14 +7,17 @@ Test Setup       Run Keywords                           Navigate To Login Page
 Test Teardown    Close Browser
 
 *** Test Cases ***
-Case_1: No Choose store
-    No Choose store
+#Case_1: Choose random successfully
+#    choose random
 
-Case_2: Choose store successfully
-   Choose store successfully
+Case_2:Choose store name successfully
+    choose store name
 
-Case_3: Choose random successfully
-    choose random
+#Case_3: Choose store successfully
+#   Choose store successfully
+#
+#Case_4: No Choose store
+#    No Choose store
 
 
 
