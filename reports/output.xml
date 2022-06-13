@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.5 on win32)" generated="20220611 09:26:05.237" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.5 on win32)" generated="20220611 09:29:16.868" rpa="false" schemaversion="3">
 <suite id="s1" name="Store" source="C:\Users\Admin\Robot\s2auto\test_suites\store.robot">
-<test id="s1-t1" name="Case_2:Choose store name successfully" line="13">
+<test id="s1-t1" name="Case_1: Choose random successfully" line="10">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>Navigate To Login Page</arg>
 <arg>AND</arg>
@@ -13,93 +13,367 @@
 <doc>Executes all the given keywords in a sequence.</doc>
 <kw name="Navigate To Login Page" library="common_kw">
 <kw name="Open Browser" library="BaseModel">
-<msg timestamp="20220611 09:26:06.989" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
-<status status="PASS" starttime="20220611 09:26:06.259" endtime="20220611 09:26:10.380"/>
+<msg timestamp="20220611 09:29:18.627" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
+<status status="PASS" starttime="20220611 09:29:17.852" endtime="20220611 09:29:23.170"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:06.259" endtime="20220611 09:26:10.380"/>
+<status status="PASS" starttime="20220611 09:29:17.851" endtime="20220611 09:29:23.172"/>
 </kw>
 <kw name="Get Driver And Set It As Suite Variable" library="common_kw">
 <kw name="Get Driver" library="BaseModel">
 <var>${temp}</var>
-<msg timestamp="20220611 09:26:10.385" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000191035EF160&gt;</msg>
-<status status="PASS" starttime="20220611 09:26:10.385" endtime="20220611 09:26:10.385"/>
+<msg timestamp="20220611 09:29:23.175" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB5EB160&gt;</msg>
+<status status="PASS" starttime="20220611 09:29:23.173" endtime="20220611 09:29:23.175"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${driver}</arg>
 <arg>${temp}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220611 09:26:10.385" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000191035EF160&gt;</msg>
-<status status="PASS" starttime="20220611 09:26:10.385" endtime="20220611 09:26:10.385"/>
+<msg timestamp="20220611 09:29:23.179" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB5EB160&gt;</msg>
+<status status="PASS" starttime="20220611 09:29:23.175" endtime="20220611 09:29:23.179"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:10.380" endtime="20220611 09:26:10.385"/>
+<status status="PASS" starttime="20220611 09:29:23.173" endtime="20220611 09:29:23.179"/>
 </kw>
 <kw name="Login" library="common_kw">
 <kw name="Set Driver" library="LoginModel">
 <arg>${driver}</arg>
-<status status="PASS" starttime="20220611 09:26:10.385" endtime="20220611 09:26:10.385"/>
+<status status="PASS" starttime="20220611 09:29:23.180" endtime="20220611 09:29:23.181"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${data}</var>
 <arg>${user_login_successfully}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220611 09:26:10.385" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
-<status status="PASS" starttime="20220611 09:26:10.385" endtime="20220611 09:26:10.385"/>
+<msg timestamp="20220611 09:29:23.182" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
+<status status="PASS" starttime="20220611 09:29:23.181" endtime="20220611 09:29:23.182"/>
 </kw>
 <kw name="Login To System" library="LoginModel">
 <arg>${data.user_name}</arg>
 <arg>${data.password}</arg>
-<msg timestamp="20220611 09:26:10.390" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
-<msg timestamp="20220611 09:26:10.521" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
-<msg timestamp="20220611 09:26:10.626" level="INFO">Clicking button 'LoginButton'.</msg>
-<msg timestamp="20220611 09:26:10.903" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000191035EF160&gt;</msg>
-<status status="PASS" starttime="20220611 09:26:10.385" endtime="20220611 09:26:10.903"/>
+<msg timestamp="20220611 09:29:23.184" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
+<msg timestamp="20220611 09:29:23.303" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
+<msg timestamp="20220611 09:29:23.399" level="INFO">Clicking button 'LoginButton'.</msg>
+<msg timestamp="20220611 09:29:23.856" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB5EB160&gt;</msg>
+<status status="PASS" starttime="20220611 09:29:23.182" endtime="20220611 09:29:23.856"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:10.385" endtime="20220611 09:26:10.903"/>
+<status status="PASS" starttime="20220611 09:29:23.179" endtime="20220611 09:29:23.857"/>
 </kw>
 <kw name="Update Driver" library="store_kw">
 <kw name="Set Driver" library="StoreModel">
 <arg>${driver}</arg>
-<status status="PASS" starttime="20220611 09:26:10.904" endtime="20220611 09:26:10.904"/>
+<status status="PASS" starttime="20220611 09:29:23.858" endtime="20220611 09:29:23.859"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:10.903" endtime="20220611 09:26:10.905"/>
+<status status="PASS" starttime="20220611 09:29:23.857" endtime="20220611 09:29:23.859"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:06.258" endtime="20220611 09:26:10.905"/>
+<status status="PASS" starttime="20220611 09:29:17.851" endtime="20220611 09:29:23.859"/>
+</kw>
+<kw name="choose random" library="store_kw">
+<kw name="Title Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:29:26.903" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<msg timestamp="20220611 09:29:27.037" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:29:23.862" endtime="20220611 09:29:27.137"/>
+</kw>
+<kw name="Random Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:29:27.213" level="INFO">Clicking element 'xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]'.</msg>
+<msg timestamp="20220611 09:29:30.360" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="9db23f5f15c05bb3d6e4ccd71dce96fd", element="b9ff42f1-2080-41cd-8d87-2497869f54cb")&gt;'.</msg>
+<status status="PASS" starttime="20220611 09:29:27.138" endtime="20220611 09:29:30.537"/>
+</kw>
+<kw name="Click Button Next Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:29:30.537" level="INFO">Clicking button 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:29:30.537" endtime="20220611 09:29:30.649"/>
+</kw>
+<kw name="Text Title" library="StoreModel">
+<status status="PASS" starttime="20220611 09:29:30.649" endtime="20220611 09:29:33.828"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:23.861" endtime="20220611 09:29:33.829"/>
+</kw>
+<kw name="Close Browser" library="BaseModel" type="TEARDOWN">
+<status status="PASS" starttime="20220611 09:29:33.837" endtime="20220611 09:29:38.832"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:17.847" endtime="20220611 09:29:38.833"/>
+</test>
+<test id="s1-t2" name="Case_2:Choose store name successfully" line="13">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Navigate To Login Page</arg>
+<arg>AND</arg>
+<arg>Get Driver And Set It As Suite Variable</arg>
+<arg>AND</arg>
+<arg>Login</arg>
+<arg>AND</arg>
+<arg>Update Driver</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Navigate To Login Page" library="common_kw">
+<kw name="Open Browser" library="BaseModel">
+<msg timestamp="20220611 09:29:39.692" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
+<status status="PASS" starttime="20220611 09:29:38.836" endtime="20220611 09:29:43.762"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:38.835" endtime="20220611 09:29:43.762"/>
+</kw>
+<kw name="Get Driver And Set It As Suite Variable" library="common_kw">
+<kw name="Get Driver" library="BaseModel">
+<var>${temp}</var>
+<msg timestamp="20220611 09:29:43.764" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB533AC0&gt;</msg>
+<status status="PASS" starttime="20220611 09:29:43.763" endtime="20220611 09:29:43.764"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${driver}</arg>
+<arg>${temp}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220611 09:29:43.765" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB533AC0&gt;</msg>
+<status status="PASS" starttime="20220611 09:29:43.764" endtime="20220611 09:29:43.765"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:43.763" endtime="20220611 09:29:43.765"/>
+</kw>
+<kw name="Login" library="common_kw">
+<kw name="Set Driver" library="LoginModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220611 09:29:43.766" endtime="20220611 09:29:43.767"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${data}</var>
+<arg>${user_login_successfully}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220611 09:29:43.768" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
+<status status="PASS" starttime="20220611 09:29:43.767" endtime="20220611 09:29:43.768"/>
+</kw>
+<kw name="Login To System" library="LoginModel">
+<arg>${data.user_name}</arg>
+<arg>${data.password}</arg>
+<msg timestamp="20220611 09:29:43.771" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
+<msg timestamp="20220611 09:29:43.919" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
+<msg timestamp="20220611 09:29:44.060" level="INFO">Clicking button 'LoginButton'.</msg>
+<msg timestamp="20220611 09:29:44.418" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB533AC0&gt;</msg>
+<status status="PASS" starttime="20220611 09:29:43.768" endtime="20220611 09:29:44.419"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:43.766" endtime="20220611 09:29:44.419"/>
+</kw>
+<kw name="Update Driver" library="store_kw">
+<kw name="Set Driver" library="StoreModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220611 09:29:44.420" endtime="20220611 09:29:44.421"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:44.419" endtime="20220611 09:29:44.421"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:38.835" endtime="20220611 09:29:44.421"/>
 </kw>
 <kw name="choose store name" library="store_kw">
 <kw name="Title Choose Store" library="StoreModel">
-<msg timestamp="20220611 09:26:13.937" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
-<msg timestamp="20220611 09:26:14.061" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
-<status status="PASS" starttime="20220611 09:26:10.906" endtime="20220611 09:26:14.100"/>
+<msg timestamp="20220611 09:29:47.454" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<msg timestamp="20220611 09:29:47.633" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:29:44.424" endtime="20220611 09:29:47.685"/>
 </kw>
 <kw name="Check Name Store" library="StoreModel">
-<msg timestamp="20220611 09:26:14.124" level="INFO">Clicking element 'xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]'.</msg>
-<msg timestamp="20220611 09:26:17.325" level="INFO">Clicking element 'xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[1]'.</msg>
-<status status="PASS" starttime="20220611 09:26:14.101" endtime="20220611 09:26:17.389"/>
+<msg timestamp="20220611 09:29:47.714" level="INFO">Clicking element 'xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]'.</msg>
+<msg timestamp="20220611 09:29:51.135" level="INFO">Clicking element 'xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[1]'.</msg>
+<status status="PASS" starttime="20220611 09:29:47.685" endtime="20220611 09:29:51.235"/>
 </kw>
 <kw name="Click Button Next Choose Store" library="StoreModel">
-<msg timestamp="20220611 09:26:17.390" level="INFO">Clicking button 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
-<status status="PASS" starttime="20220611 09:26:17.390" endtime="20220611 09:26:17.525"/>
+<msg timestamp="20220611 09:29:51.235" level="INFO">Clicking button 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:29:51.235" endtime="20220611 09:29:51.403"/>
 </kw>
 <kw name="Text Title" library="StoreModel">
-<status status="PASS" starttime="20220611 09:26:17.525" endtime="20220611 09:26:19.047"/>
+<status status="PASS" starttime="20220611 09:29:51.403" endtime="20220611 09:29:53.684"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:10.906" endtime="20220611 09:26:19.047"/>
+<status status="PASS" starttime="20220611 09:29:44.424" endtime="20220611 09:29:53.684"/>
 </kw>
 <kw name="Close Browser" library="BaseModel" type="TEARDOWN">
-<status status="PASS" starttime="20220611 09:26:19.049" endtime="20220611 09:26:22.600"/>
+<status status="PASS" starttime="20220611 09:29:53.686" endtime="20220611 09:29:56.106"/>
 </kw>
-<status status="PASS" starttime="20220611 09:26:06.258" endtime="20220611 09:26:22.600"/>
+<status status="PASS" starttime="20220611 09:29:38.834" endtime="20220611 09:29:56.107"/>
 </test>
-<status status="PASS" starttime="20220611 09:26:05.239" endtime="20220611 09:26:22.600"/>
+<test id="s1-t3" name="Case_3: Choose store successfully" line="16">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Navigate To Login Page</arg>
+<arg>AND</arg>
+<arg>Get Driver And Set It As Suite Variable</arg>
+<arg>AND</arg>
+<arg>Login</arg>
+<arg>AND</arg>
+<arg>Update Driver</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Navigate To Login Page" library="common_kw">
+<kw name="Open Browser" library="BaseModel">
+<msg timestamp="20220611 09:29:56.999" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
+<status status="PASS" starttime="20220611 09:29:56.110" endtime="20220611 09:30:00.979"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:56.109" endtime="20220611 09:30:00.979"/>
+</kw>
+<kw name="Get Driver And Set It As Suite Variable" library="common_kw">
+<kw name="Get Driver" library="BaseModel">
+<var>${temp}</var>
+<msg timestamp="20220611 09:30:00.980" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB6E1A20&gt;</msg>
+<status status="PASS" starttime="20220611 09:30:00.980" endtime="20220611 09:30:00.980"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${driver}</arg>
+<arg>${temp}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220611 09:30:00.981" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB6E1A20&gt;</msg>
+<status status="PASS" starttime="20220611 09:30:00.980" endtime="20220611 09:30:00.981"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:00.979" endtime="20220611 09:30:00.981"/>
+</kw>
+<kw name="Login" library="common_kw">
+<kw name="Set Driver" library="LoginModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220611 09:30:00.982" endtime="20220611 09:30:00.982"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${data}</var>
+<arg>${user_login_successfully}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220611 09:30:00.983" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
+<status status="PASS" starttime="20220611 09:30:00.983" endtime="20220611 09:30:00.983"/>
+</kw>
+<kw name="Login To System" library="LoginModel">
+<arg>${data.user_name}</arg>
+<arg>${data.password}</arg>
+<msg timestamp="20220611 09:30:00.986" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
+<msg timestamp="20220611 09:30:01.124" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
+<msg timestamp="20220611 09:30:01.256" level="INFO">Clicking button 'LoginButton'.</msg>
+<msg timestamp="20220611 09:30:01.669" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB6E1A20&gt;</msg>
+<status status="PASS" starttime="20220611 09:30:00.983" endtime="20220611 09:30:01.669"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:00.981" endtime="20220611 09:30:01.669"/>
+</kw>
+<kw name="Update Driver" library="store_kw">
+<kw name="Set Driver" library="StoreModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220611 09:30:01.670" endtime="20220611 09:30:01.671"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:01.669" endtime="20220611 09:30:01.672"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:56.109" endtime="20220611 09:30:01.673"/>
+</kw>
+<kw name="Choose store successfully" library="store_kw">
+<kw name="Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:30:05.164" level="INFO">Clicking element 'xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]'.</msg>
+<msg timestamp="20220611 09:30:05.363" level="INFO">Clicking element 'xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[1]'.</msg>
+<status status="PASS" starttime="20220611 09:30:01.675" endtime="20220611 09:30:05.463"/>
+</kw>
+<kw name="Click Button Next Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:30:05.463" level="INFO">Clicking button 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:30:05.463" endtime="20220611 09:30:05.598"/>
+</kw>
+<kw name="Text Title" library="StoreModel">
+<status status="PASS" starttime="20220611 09:30:05.598" endtime="20220611 09:30:07.545"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:01.674" endtime="20220611 09:30:07.546"/>
+</kw>
+<kw name="Close Browser" library="BaseModel" type="TEARDOWN">
+<status status="PASS" starttime="20220611 09:30:07.547" endtime="20220611 09:30:09.873"/>
+</kw>
+<status status="PASS" starttime="20220611 09:29:56.108" endtime="20220611 09:30:09.873"/>
+</test>
+<test id="s1-t4" name="Case_4: No Choose store" line="19">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Navigate To Login Page</arg>
+<arg>AND</arg>
+<arg>Get Driver And Set It As Suite Variable</arg>
+<arg>AND</arg>
+<arg>Login</arg>
+<arg>AND</arg>
+<arg>Update Driver</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Navigate To Login Page" library="common_kw">
+<kw name="Open Browser" library="BaseModel">
+<msg timestamp="20220611 09:30:10.653" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
+<status status="PASS" starttime="20220611 09:30:09.876" endtime="20220611 09:30:14.743"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:09.876" endtime="20220611 09:30:14.743"/>
+</kw>
+<kw name="Get Driver And Set It As Suite Variable" library="common_kw">
+<kw name="Get Driver" library="BaseModel">
+<var>${temp}</var>
+<msg timestamp="20220611 09:30:14.744" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB5EBFA0&gt;</msg>
+<status status="PASS" starttime="20220611 09:30:14.744" endtime="20220611 09:30:14.744"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${driver}</arg>
+<arg>${temp}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220611 09:30:14.745" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB5EBFA0&gt;</msg>
+<status status="PASS" starttime="20220611 09:30:14.744" endtime="20220611 09:30:14.745"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:14.743" endtime="20220611 09:30:14.745"/>
+</kw>
+<kw name="Login" library="common_kw">
+<kw name="Set Driver" library="LoginModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220611 09:30:14.745" endtime="20220611 09:30:14.746"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${data}</var>
+<arg>${user_login_successfully}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220611 09:30:14.746" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
+<status status="PASS" starttime="20220611 09:30:14.746" endtime="20220611 09:30:14.746"/>
+</kw>
+<kw name="Login To System" library="LoginModel">
+<arg>${data.user_name}</arg>
+<arg>${data.password}</arg>
+<msg timestamp="20220611 09:30:14.747" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
+<msg timestamp="20220611 09:30:14.950" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
+<msg timestamp="20220611 09:30:15.048" level="INFO">Clicking button 'LoginButton'.</msg>
+<msg timestamp="20220611 09:30:15.484" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000176FB5EBFA0&gt;</msg>
+<status status="PASS" starttime="20220611 09:30:14.746" endtime="20220611 09:30:15.484"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:14.745" endtime="20220611 09:30:15.484"/>
+</kw>
+<kw name="Update Driver" library="store_kw">
+<kw name="Set Driver" library="StoreModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220611 09:30:15.485" endtime="20220611 09:30:15.486"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:15.485" endtime="20220611 09:30:15.486"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:09.876" endtime="20220611 09:30:15.486"/>
+</kw>
+<kw name="No Choose store" library="store_kw">
+<kw name="Title Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:30:18.505" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<msg timestamp="20220611 09:30:18.610" level="INFO">Clicking element 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:30:15.490" endtime="20220611 09:30:18.664"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${data}</var>
+<arg>${no_choose_store}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220611 09:30:18.667" level="INFO">${data} = {'error_message': 'Vui lòng chọn cửa hàng trước khi tiếp tục'}</msg>
+<status status="PASS" starttime="20220611 09:30:18.664" endtime="20220611 09:30:18.667"/>
+</kw>
+<kw name="Check Message Error From Choose Store" library="StoreModel">
+<arg>${data.error_message}</arg>
+<msg timestamp="20220611 09:30:18.668" level="INFO">Verifying element 'xpath://span[@id='ddlChooseStoreId_validationMessage']' contains exact text 'Vui lòng chọn cửa hàng trước khi tiếp tục'.</msg>
+<status status="PASS" starttime="20220611 09:30:18.667" endtime="20220611 09:30:18.702"/>
+</kw>
+<kw name="Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:30:21.734" level="INFO">Clicking element 'xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]'.</msg>
+<msg timestamp="20220611 09:30:22.120" level="INFO">Clicking element 'xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[1]'.</msg>
+<status status="PASS" starttime="20220611 09:30:18.702" endtime="20220611 09:30:22.434"/>
+</kw>
+<kw name="Click Button Next Choose Store" library="StoreModel">
+<msg timestamp="20220611 09:30:22.434" level="INFO">Clicking button 'xpath://button[contains(@id,'btnSaveChooseStoreForUser')]'.</msg>
+<status status="PASS" starttime="20220611 09:30:22.434" endtime="20220611 09:30:22.508"/>
+</kw>
+<kw name="Text Title" library="StoreModel">
+<status status="PASS" starttime="20220611 09:30:22.508" endtime="20220611 09:30:24.378"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:15.489" endtime="20220611 09:30:24.378"/>
+</kw>
+<kw name="Close Browser" library="BaseModel" type="TEARDOWN">
+<status status="PASS" starttime="20220611 09:30:24.379" endtime="20220611 09:30:26.646"/>
+</kw>
+<status status="PASS" starttime="20220611 09:30:09.875" endtime="20220611 09:30:26.647"/>
+</test>
+<status status="PASS" starttime="20220611 09:29:16.869" endtime="20220611 09:30:26.648"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Store">Store</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Store">Store</stat>
 </suite>
 </statistics>
 <errors>
