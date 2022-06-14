@@ -15,3 +15,6 @@ locators_choose = read_yaml(url_data_choose)
 
 c_path = f"{path}{os.sep}data{os.sep}common.yaml"
 common_data = read_yaml(c_path)
+
+# url_data_product = f"{path}{os.sep}locators{os.sep}create_product.yaml"
+# locators_product = read_yaml(url_data_product)

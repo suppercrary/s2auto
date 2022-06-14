@@ -12,9 +12,9 @@ from core_libs.DataHelper import locators_create_product
 In_product = locators_create_product.get("In_product")
 
 
-class CreateProductModel:
+class CreateproductModel:
     def __init__(self):
-        self.driver=None
+        self.driver = None
 
     def set_driver(self, driver: SeleniumLibrary):
         self.driver = driver

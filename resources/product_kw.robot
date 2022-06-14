@@ -1,9 +1,11 @@
 *** Settings ***
-Resource        ${EXECDIR}/resources/common_kw.robot
-Library         ../libs/createproduct.py
+
+Resource    ../resources/common_kw.robot
+Library         ../libs/CreateproductModel.py
 
 *** Keywords ***
 Update Driver
-    CreateProductModel.Set Driver    ${driver}
+    CreateproductModel.set driver    ${driver}
 
-Choose store successfully
+in product
+    In product
