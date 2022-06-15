@@ -1,21 +1,12 @@
 In_product:
    text_title: "xpath://h2[normalize-space()='SAMPLE DASHBOARD']"
-   select_product: "xpath://div[contains(@class,'icon-menu-QLSP')]"
+   select_product: "xpath://span[contains(@class,'nameMenuLeft')]"
    option_product: "xpath://a[contains(@data-url,'khuyen-mai')]"
    text_title_product: "xpath://h6[contains(@class,'title-panel-function border-bt')]"
 
-Create_Product:
+Create_promotion:
    button_create: "xpath://a[contains(@id,'btnCreate')]"
    text_title_Create: "xpath://span[contains(@id,'wdnChooseDiscountType_wnd_title')]"
-
-   radio_product: "xpath://span[contains(@class,'k-radio-label')]"
-   button_continue: "xpath://button[contains(@id,'btnContinue')]"
-   button_close:  "xpath://button[contains(@id,'btnCloseCreateTax')]"
-
-Create_Product_Amount_Price:
-   text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
-   input_name_product: "xpath://input[contains(@id,'txtName')]"
-
 #   Mua theo số lượng giảm giá: Theo giá
 #   Khuyến mãi dựa trên hóa đơn: Theo giá
 #   Mua X nhận Y với giá giảm Z: Theo giá
@@ -24,6 +15,16 @@ Create_Product_Amount_Price:
 #   Khuyến mãi dựa trên hóa đơn: Theo %
 #   Mua X nhận Y với giá giảm Z: Theo %
 #   Flash sale
+   radio_product: "xpath://span[contains(@class,'k-radio-label')]"
+   input_amount_price: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByQuantityByPrice')]"
+   button_continue: "xpath://button[contains(@id,'btnContinue')]"
+   button_close:  "xpath://button[contains(@id,'btnCloseCreateTax')]"
+
+Create_Product_Amount_Price:
+   text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
+   input_name_product: "xpath://input[contains(@id,'txtName')]"
+
+
 
 
 

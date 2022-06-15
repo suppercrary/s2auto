@@ -12,3 +12,4 @@ Test Teardown    Close Browser
 *** Test Cases ***
 Test_case1: in promotion
     in promotion
+#Test_case2: Create in promotion
