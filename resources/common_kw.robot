@@ -23,9 +23,5 @@ Login
     ${data}=                 Set Variable         ${user_login_successfully}
     LOGIN TO SYSTEM          ${data.user_name}    ${data.password}
 
-
-ChooseStore1
-    StoreModel.set driver    ${driver}
-    ${data}=                 Set Variable         ${no_choose_store}
-    check message error from choose store       ${data.error_message}
+ChooseStore
 

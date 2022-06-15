@@ -7,9 +7,9 @@ import sys
 
 dir_name = os.path.dirname(__file__).replace(f"{os.sep}libs", "")
 sys.path.append(dir_name)
-from core_libs.DataHelper import locators_create_product
+from core_libs.DataHelper import locators_product
 
-In_product = locators_create_product.get("In_product")
+In_product = locators_product.get("In_product")
 
 
 class CreateproductModel:

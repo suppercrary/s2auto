@@ -1,10 +1,11 @@
 *** Settings ***
 Resource    ../resources/common_kw.robot
+Library     ../libs/LoginModel.py
 
 
 *** Keywords ***
 Update Driver
-    Set Driver    ${driver}
+    LoginModel.Set Driver    ${driver}
 
 
 Login With Correct Data
