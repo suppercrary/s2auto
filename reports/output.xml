@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.5 on win32)" generated="20220615 11:54:58.968" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.5 on win32)" generated="20220615 20:52:33.963" rpa="false" schemaversion="3">
 <suite id="s1" name="Product" source="C:\Users\Admin\Robot\s2auto\test_suites\product.robot">
 <test id="s1-t1" name="Test_case1: in product" line="11">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
@@ -13,66 +13,365 @@
 <doc>Executes all the given keywords in a sequence.</doc>
 <kw name="Navigate To Login Page" library="common_kw">
 <kw name="Open Browser" library="BaseModel">
-<msg timestamp="20220615 11:55:00.761" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
-<status status="PASS" starttime="20220615 11:55:00.096" endtime="20220615 11:55:04.646"/>
+<msg timestamp="20220615 20:52:35.899" level="INFO">Opening browser 'chrome' to base url 'https://satthepangiang.s2retail.online'.</msg>
+<status status="PASS" starttime="20220615 20:52:35.074" endtime="20220615 20:52:39.609"/>
 </kw>
-<status status="PASS" starttime="20220615 11:55:00.095" endtime="20220615 11:55:04.647"/>
+<status status="PASS" starttime="20220615 20:52:35.074" endtime="20220615 20:52:39.609"/>
 </kw>
 <kw name="Get Driver And Set It As Suite Variable" library="common_kw">
 <kw name="Get Driver" library="BaseModel">
 <var>${temp}</var>
-<msg timestamp="20220615 11:55:04.650" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000220085BC220&gt;</msg>
-<status status="PASS" starttime="20220615 11:55:04.649" endtime="20220615 11:55:04.650"/>
+<msg timestamp="20220615 20:52:39.610" level="INFO">${temp} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000229C7C36D70&gt;</msg>
+<status status="PASS" starttime="20220615 20:52:39.609" endtime="20220615 20:52:39.610"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${driver}</arg>
 <arg>${temp}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220615 11:55:04.652" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000220085BC220&gt;</msg>
-<status status="PASS" starttime="20220615 11:55:04.650" endtime="20220615 11:55:04.652"/>
+<msg timestamp="20220615 20:52:39.611" level="INFO">${driver} = &lt;SeleniumLibrary.SeleniumLibrary object at 0x00000229C7C36D70&gt;</msg>
+<status status="PASS" starttime="20220615 20:52:39.610" endtime="20220615 20:52:39.611"/>
 </kw>
-<status status="PASS" starttime="20220615 11:55:04.648" endtime="20220615 11:55:04.652"/>
+<status status="PASS" starttime="20220615 20:52:39.609" endtime="20220615 20:52:39.611"/>
 </kw>
 <kw name="Login" library="common_kw">
 <kw name="Set Driver" library="LoginModel">
 <arg>${driver}</arg>
-<status status="PASS" starttime="20220615 11:55:04.652" endtime="20220615 11:55:04.653"/>
+<status status="PASS" starttime="20220615 20:52:39.612" endtime="20220615 20:52:39.612"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${data}</var>
 <arg>${user_login_successfully}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220615 11:55:04.653" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
-<status status="PASS" starttime="20220615 11:55:04.653" endtime="20220615 11:55:04.653"/>
+<msg timestamp="20220615 20:52:39.613" level="INFO">${data} = {'user_name': 'quanlyct', 'password': 'quanlyCT1'}</msg>
+<status status="PASS" starttime="20220615 20:52:39.612" endtime="20220615 20:52:39.613"/>
 </kw>
 <kw name="Login To System" library="LoginModel">
 <arg>${data.user_name}</arg>
 <arg>${data.password}</arg>
-<msg timestamp="20220615 11:55:04.655" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
-<msg timestamp="20220615 11:55:04.786" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
-<msg timestamp="20220615 11:55:04.889" level="INFO">Clicking button 'LoginButton'.</msg>
-<msg timestamp="20220615 11:55:05.210" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000220085BC220&gt;</msg>
-<status status="PASS" starttime="20220615 11:55:04.653" endtime="20220615 11:55:05.210"/>
+<msg timestamp="20220615 20:52:39.616" level="INFO">Typing text 'quanlyct' into text field 'xpath://input[@id='usernameOrEmailAddress']'.</msg>
+<msg timestamp="20220615 20:52:39.742" level="INFO">Typing text 'quanlyCT1' into text field 'xpath://input[@id='Password']'.</msg>
+<msg timestamp="20220615 20:52:39.848" level="INFO">Clicking button 'LoginButton'.</msg>
+<msg timestamp="20220615 20:52:40.138" level="INFO">&lt;SeleniumLibrary.SeleniumLibrary object at 0x00000229C7C36D70&gt;</msg>
+<status status="PASS" starttime="20220615 20:52:39.613" endtime="20220615 20:52:40.138"/>
 </kw>
-<status status="PASS" starttime="20220615 11:55:04.652" endtime="20220615 11:55:05.210"/>
+<status status="PASS" starttime="20220615 20:52:39.611" endtime="20220615 20:52:40.139"/>
 </kw>
-<kw name="Update Driver">
-<msg timestamp="20220615 11:55:05.210" level="FAIL">Multiple keywords with name 'Update Driver' found. Give the full name of the keyword you want to use:
-    product_kw.Update Driver
-    store_kw.Update Driver</msg>
-<status status="FAIL" starttime="20220615 11:55:05.210" endtime="20220615 11:55:05.210"/>
+<kw name="Update Driver" library="product_kw">
+<kw name="Set Driver" library="CreateproductModel">
+<arg>${driver}</arg>
+<status status="PASS" starttime="20220615 20:52:40.140" endtime="20220615 20:52:40.140"/>
 </kw>
-<status status="FAIL" starttime="20220615 11:55:00.095" endtime="20220615 11:55:05.211"/>
+<status status="PASS" starttime="20220615 20:52:40.139" endtime="20220615 20:52:40.140"/>
+</kw>
+<status status="PASS" starttime="20220615 20:52:35.074" endtime="20220615 20:52:40.141"/>
+</kw>
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<kw name="in product" library="product_kw">
+<msg timestamp="20220615 20:52:40.184" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<status status="FAIL" starttime="20220615 20:52:40.183" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.183" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.183" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.183" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.182" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.182" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.182" endtime="20220615 20:52:40.184"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.182" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.181" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.181" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.181" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.181" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.180" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.180" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.180" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.180" endtime="20220615 20:52:40.185"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.179" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.179" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.178" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.178" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.178" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.178" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.177" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.177" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.177" endtime="20220615 20:52:40.186"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.177" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.176" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.176" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.176" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.175" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.175" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.175" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.175" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.175" endtime="20220615 20:52:40.187"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.174" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.174" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.174" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.174" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.173" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.173" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.173" endtime="20220615 20:52:40.188"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.173" endtime="20220615 20:52:40.189"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.172" endtime="20220615 20:52:40.189"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.172" endtime="20220615 20:52:40.189"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.172" endtime="20220615 20:52:40.189"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.172" endtime="20220615 20:52:40.189"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.171" endtime="20220615 20:52:40.189"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.171" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.171" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.171" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.170" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.170" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.170" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.170" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.170" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.169" endtime="20220615 20:52:40.190"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.169" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.168" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.168" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.168" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.168" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.167" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.167" endtime="20220615 20:52:40.191"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.167" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.167" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.166" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.166" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.166" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.165" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.165" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.165" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.164" endtime="20220615 20:52:40.192"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.163" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.162" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.162" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.161" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.161" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.160" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.159" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.159" endtime="20220615 20:52:40.193"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.158" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.157" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.156" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.155" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.155" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.154" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.153" endtime="20220615 20:52:40.194"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.153" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.152" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.151" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.150" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.150" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.148" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.147" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.146" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.145" endtime="20220615 20:52:40.195"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.144" endtime="20220615 20:52:40.196"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.143" endtime="20220615 20:52:40.196"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.143" endtime="20220615 20:52:40.196"/>
+</kw>
+<status status="FAIL" starttime="20220615 20:52:40.142" endtime="20220615 20:52:40.196"/>
 </kw>
 <kw name="Close Browser" library="BaseModel" type="TEARDOWN">
-<status status="PASS" starttime="20220615 11:55:05.213" endtime="20220615 11:55:07.478"/>
+<status status="PASS" starttime="20220615 20:52:40.196" endtime="20220615 20:52:42.477"/>
 </kw>
-<status status="FAIL" starttime="20220615 11:55:00.094" endtime="20220615 11:55:07.479">Setup failed:
-Multiple keywords with name 'Update Driver' found. Give the full name of the keyword you want to use:
-    product_kw.Update Driver
-    store_kw.Update Driver</status>
+<status status="FAIL" starttime="20220615 20:52:35.073" endtime="20220615 20:52:42.478">Maximum limit of started keywords and control structures exceeded.</status>
 </test>
-<status status="FAIL" starttime="20220615 11:54:58.972" endtime="20220615 11:55:07.481"/>
+<status status="FAIL" starttime="20220615 20:52:33.967" endtime="20220615 20:52:42.484"/>
 </suite>
 <statistics>
 <total>
