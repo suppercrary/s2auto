@@ -106,6 +106,13 @@ class StoreModel:
         # if cửa hàng muốn vào không có trong danh sách thì mặc định vào cửa hàng 1
         self.driver.click_element(store_locators.get("option_choose_store"))
 
+    def store_successfully(self):
+        sleep(3)
+        self.driver.click_element(store_locators.get("select_choose_store"))
+        sleep(2)
+        self.driver.click_element(store_locators.get("option_choose_store"))
+        sleep(1)
+        self.driver.click_button(store_locators.get("button_next_choose_store"))
 
 
 

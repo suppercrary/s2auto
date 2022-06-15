@@ -2,7 +2,8 @@ no_choose_store:
   error_message: "Vui lòng chọn cửa hàng trước khi tiếp tục"
 
 choose_store_name:
-  choose_store_name1: "CH1"
+  select_choose_store: "xpath://span[contains(@aria-owns,'ddlChooseStoreId_listbox')]"
+  option_choose_store: "xpath://ul[contains(@id,'ddlChooseStoreId_listbox')]/li[6]"
 
 
 choose_store_random_successfully:

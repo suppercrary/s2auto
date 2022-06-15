@@ -1,5 +1,5 @@
 *** Settings ***
-
+Resource        ../resources/store_kw.robot
 Resource        ../resources/common_kw.robot
 Library         ../libs/CreateproductModel.py
 
@@ -7,5 +7,5 @@ Library         ../libs/CreateproductModel.py
 Update Driver
     CreateproductModel.Set driver    ${driver}
 
-in product
+in promotion
     In product

@@ -1,6 +1,6 @@
 In_product:
    text_title: "xpath://h2[normalize-space()='SAMPLE DASHBOARD']"
-   select_product: "xpath://div[contains(@class,' icon-menu-QLSP ')]"
+   select_product: "xpath://div[contains(@class,'icon-menu-QLSP')]"
    option_product: "xpath://a[contains(@data-url,'khuyen-mai')]"
    text_title_product: "xpath://h6[contains(@class,'title-panel-function border-bt')]"
 

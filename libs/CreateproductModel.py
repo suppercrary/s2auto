@@ -21,7 +21,7 @@ class CreateproductModel:
 
     def in_product(self):
         self.driver.wait_until_page_contains_element(In_product.get("text_title"), timeout="20s")
-        self.driver.click_element(In_product.get("select_product"), timeout="20s")
-        self.driver.click_element(In_product.get("option_product"), timeout="20s")
-        self.driver.click_element(In_product.get("text_title_product"), timeout="30s")
+        self.driver.click_element(In_product.get("select_product"))
+        self.driver.click_element(In_product.get("option_product"))
+        self.driver.click_element(In_product.get("text_title_product"))
 
