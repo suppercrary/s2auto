@@ -10,6 +10,8 @@ Test Setup       Run Keywords                           Navigate To Login Page
 Test Teardown    Close Browser
 
 *** Test Cases ***
-Test_case1: in promotion
+#Test_case1: in promotion
+#    in promotion
+Test_case2: Create in promotion
     in promotion
-#Test_case2: Create in promotion
+    Create promotion

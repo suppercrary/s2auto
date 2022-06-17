@@ -26,11 +26,15 @@ class CreateproductModel:
             if self.driver.get_text(i) == "Quản Lý Sản Phẩm":
                 self.driver.click_element(i)
         self.driver.click_element(In_product.get("option_product"))
-        self.driver.click_element(In_product.get("text_title_product"))
+        self.driver.wait_until_page_contains_element(In_product.get("text_title_product"), timeout="20s")
 
     def create_promotion(self):
-        self.driver.click_button(Create_promotion.get("button_create"))
-        self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_Create"), timeout="20s")
+        self.driver.click_element(Create_promotion.get("button_create"))
+        self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_Create"), timeout="30s")
+        sleep(2)
         self.driver.click_element(Create_promotion.get("input_amount_price"))
         self.driver.click_button(Create_promotion.get("button_continue"))
+        self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_product_amount_price"), timeout="30s")
+    def input_data_promotion_amount_price(self):
+
 

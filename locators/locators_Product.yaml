@@ -5,6 +5,7 @@ In_product:
    text_title_product: "xpath://h6[contains(@class,'title-panel-function border-bt')]"
 
 Create_promotion:
+   text_title_product: "xpath://h6[contains(@class,'title-panel-function border-bt')]"
    button_create: "xpath://a[contains(@id,'btnCreate')]"
    text_title_Create: "xpath://span[contains(@id,'wdnChooseDiscountType_wnd_title')]"
 #   Mua theo số lượng giảm giá: Theo giá
@@ -19,10 +20,15 @@ Create_promotion:
    input_amount_price: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByQuantityByPrice')]"
    button_continue: "xpath://button[contains(@id,'btnContinue')]"
    button_close:  "xpath://button[contains(@id,'btnCloseCreateTax')]"
+   text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
 
 Create_Product_Amount_Price:
    text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
    input_name_product: "xpath://input[contains(@id,'txtName')]"
+   click_button_start_date: "xpath://div[contains(@id,'startDate')]/span/button"
+   option_start_date:
+   click_button_end_date:  "xpath://div[contains(@id,'endDate')]/span/button"
+   click_button_add_create:   "xpath://button[contains(@id,'btnAddRow')]"
 
 
 

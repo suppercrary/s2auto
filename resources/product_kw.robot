@@ -9,3 +9,5 @@ Update Driver
 
 in promotion
     In product
+create promotion amount price
+    Create promotion
