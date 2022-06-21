@@ -1,3 +1,6 @@
 create_promotion_amount_price:
+  name_promotion: "mua sl giam tien thuong"
   start_date: "22/06/2022"
   end_date: "22/07/2022"
+  number: 3
+  discount_amount: 1500000

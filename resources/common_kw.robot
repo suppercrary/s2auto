@@ -5,6 +5,7 @@ Library     ../libs/StoreModel.py
 Variables    ${EXECDIR}/data/store.yaml
 Variables    ${EXECDIR}/data/common.yaml
 Variables    ${EXECDIR}/data/login.yaml
+Variables    ${EXECDIR}/data/promotion.yaml
 
 
 

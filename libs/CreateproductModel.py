@@ -36,12 +36,17 @@ class CreateproductModel:
         self.driver.click_element(Create_promotion.get("input_amount_price"))
         self.driver.click_button(Create_promotion.get("button_continue"))
         self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_product_amount_price"), timeout="30s")
-    def input_data_promotion_amount_price(self, nameproduct, number, discountamount):
+    def promotion_amount_price(self, nameproduct, startdate, enddate, number, discountamount):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
         self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
+        self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
+        sleep(3)
+        self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
+        sleep(3)
         self.driver.click_button(inputs_data.get("click_button_add_create"))
-        sleep(1)
-        self.driver.click_element(inputs_data.get("click_element_add_create"))
-        self.driver.input_text(inputs_data.get("click_element_add_create"), number, )
+        sleep(3)
+        # self.driver.click_element(inputs_data.get("click_element_add_create"))
+        self.driver.input_text(inputs_data.get("input_number"), number, )
         self.driver.input_text(inputs_data.get("input_discount_amount"), discountamount, )
+        self.driver.click_element(inputs_data.get("click_save"))
 

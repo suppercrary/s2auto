@@ -2,6 +2,7 @@
 Resource         ../resources/product_kw.robot
 
 
+
 Test Setup       Run Keywords                           Navigate To Login Page
                  ...                                    AND                       Get Driver And Set It As Suite Variable
                  ...                                    AND                       Login
@@ -15,3 +16,5 @@ Test Teardown    Close Browser
 #Test_case2: Create in promotion
 #    create promotion amount price
 Test_case3: input data promotion amount price
+     input data amount price
+

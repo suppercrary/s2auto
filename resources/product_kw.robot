@@ -2,6 +2,7 @@
 Resource        ../resources/store_kw.robot
 Resource        ../resources/common_kw.robot
 Library         ../libs/CreateproductModel.py
+Variables    ${EXECDIR}/data/promotion.yaml
 
 *** Keywords ***
 Update Driver
@@ -15,6 +16,5 @@ create promotion amount price
 input data amount price
     in product
     Create promotion
-     ${data}=                           Set Variable         ${}
-    LOGIN TO SYSTEM                    ${data.user_name}    ${data.password}
-    input data promotion amount price
+     ${data}=                           Set Variable         ${create_promotion_amount_price}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}    ${data.number}  ${data.discount_amount}
