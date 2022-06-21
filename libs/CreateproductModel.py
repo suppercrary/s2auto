@@ -10,7 +10,8 @@ sys.path.append(dir_name)
 from core_libs.DataHelper import locators_product
 
 In_product = locators_product.get("In_product")
-Create_promotion= locators_product.get("Create_promotion")
+Create_promotion = locators_product.get("Create_promotion")
+inputs_data = locators_product.get("Create_Product_Amount_Price")
 
 class CreateproductModel:
     def __init__(self):
@@ -35,6 +36,12 @@ class CreateproductModel:
         self.driver.click_element(Create_promotion.get("input_amount_price"))
         self.driver.click_button(Create_promotion.get("button_continue"))
         self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_product_amount_price"), timeout="30s")
-    def input_data_promotion_amount_price(self):
-
+    def input_data_promotion_amount_price(self, nameproduct, number, discountamount):
+        self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
+        self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
+        self.driver.click_button(inputs_data.get("click_button_add_create"))
+        sleep(1)
+        self.driver.click_element(inputs_data.get("click_element_add_create"))
+        self.driver.input_text(inputs_data.get("click_element_add_create"), number, )
+        self.driver.input_text(inputs_data.get("input_discount_amount"), discountamount, )
 
