@@ -32,9 +32,11 @@ Create_Product_Amount_Price:
 #   click_button_end_date:  "xpath://div[contains(@id,'endDate')]/span/button"
 #   option_end_date:
    click_button_add_create:   "xpath://button[contains(@id,'btnAddRow')]"
-#   click_element_add_create: "xpath://tr[contains(@class,'k-master-row')]/"
-   input_number:  "xpath://input[contains(@id,'BuyQuantity')]"
-   input_discount_amount: "xpath://tr[contains(@class,'k-master-row k-grid-edit-row')]/td[2]/span/input[2]"
+   click_element_add_create: "xpath://tr[contains(@class,'k-master-row')]/td[1]"
+   click_button_sl: "xpath://button[contains(@role,'button')]"
+   text_sl: "xpath://tr[contains(@class,'k-master-row')]/td[2]/span"
+   input_number:  "xpath://input[contains(@id,'BuyQuantity')]/preceding-sibling::input"
+   input_discount_amount: "xpath://tr[contains(@class,'k-master-row k-grid-edit-row')]/td[2]/span/input[1]"
    click_save: "xpath://a[contains(@id,'btnSave')]"
 
 

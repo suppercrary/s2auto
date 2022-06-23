@@ -17,4 +17,4 @@ input data amount price
     in product
     Create promotion
      ${data}=                           Set Variable         ${create_promotion_amount_price}
-    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}    ${data.number}  ${data.discount_amount}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}  ${data.number}  ${data.discount_amount}
