@@ -49,6 +49,22 @@ class CreateproductModel:
         sleep(1)
         self.driver.click_element(Create_promotion.get("input_amount_bill_percent"))
 
+    def option_promotion_buy_one(self):
+        sleep(1)
+        self.driver.click_element(Create_promotion.get("input_amount_buy_one"))
+
+    def option_promotion_buy_percent(self):
+        sleep(1)
+        self.driver.click_element(Create_promotion.get("input_amount_buy_percent"))
+
+    def option_promotion_free(self):
+        sleep(1)
+        self.driver.click_element(Create_promotion.get("input_amount_free"))
+
+    def option_promotion_flash(self):
+        sleep(1)
+        self.driver.click_element(Create_promotion.get("input_amount_flash"))
+
     def click_continue(self):
         sleep(1)
         self.driver.click_button(Create_promotion.get("button_continue"))
@@ -114,16 +130,68 @@ class CreateproductModel:
         self.driver.double_click_element(t[9])
         self.driver.click_element(inputs_data.get("click_save"))
 
-    def promotion_amount_bill_percent(self, nameproduct, startdate, enddate):
-
+    def promotion_amount_buy_one(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
         self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
         self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
         self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
-        self.driver.click_element(inputs_data.get("click_element_add_create"))
+        # self.driver.click_element(inputs_data.get("click_element_add_create"))
         t = self.driver.find_elements(inputs_data.get("click_button_sl"))
         self.driver.double_click_element(t[8])
         self.driver.double_click_element(t[10])
         self.driver.double_click_element(t[12])
         self.driver.double_click_element(t[12])
+        self.driver.click_element(inputs_data.get("click_save"))
+
+    def promotion_amount_buy_percent(self, nameproduct, startdate, enddate):
+        self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
+        self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
+        self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
+        self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
+        # self.driver.click_element(inputs_data.get("click_element_add_create"))
+        t = self.driver.find_elements(inputs_data.get("click_button_sl"))
+        self.driver.click_element(t[8])
+        self.driver.double_click_element(t[10])
+        self.driver.double_click_element(t[12])
+        self.driver.double_click_element(t[12])
+        self.driver.click_element(inputs_data.get("click_save"))
+
+    def promotion_amount_free(self, nameproduct, startdate, enddate):
+        self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
+        self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
+        self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
+        self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
+        self.driver.click_element(inputs_data.get("click_save"))
+
+    def promotion_amount_flash_price(self, nameproduct, startdate, enddate):
+        self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
+        self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
+        self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
+        self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
+        self.driver.click_element(inputs_data.get("click_button_add_create"))
+        self.driver.click_element(inputs_data.get("click_element_add_create"))
+        sleep(1)
+        t = self.driver.find_elements(inputs_data.get("click_button_sl"))
+        self.driver.click_element(t[7])
+        self.driver.click_element(inputs_data.get("option_start_hours"))
+        self.driver.click_element(t[8])
+        self.driver.click_element(inputs_data.get("option_end_hours"))
+        self.driver.double_click_element(t[9])
+        self.driver.click_element(inputs_data.get("click_save"))
+
+    def promotion_amount_flash_amount(self, nameproduct, startdate, enddate):
+        self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
+        self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
+        self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
+        self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
+        self.driver.click_element(inputs_data.get("click_button_add_create"))
+        self.driver.click_element(inputs_data.get("click_element_add_create"))
+        sleep(1)
+        t = self.driver.find_elements(inputs_data.get("click_button_sl"))
+        self.driver.click_element(t[7])
+        self.driver.click_element(inputs_data.get("option_start_hours"))
+        self.driver.click_element(t[8])
+        self.driver.click_element(inputs_data.get("option_end_hours"))
+        self.driver.click_element(inputs_data.get("option_amount"))
+        self.driver.double_click_element(t[9])
         self.driver.click_element(inputs_data.get("click_save"))

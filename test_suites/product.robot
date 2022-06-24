@@ -24,6 +24,20 @@ Test Teardown    Close Browser
 #Test_case: input data promotion amount bill
 #     input data amount bill
 
-Test_case: input data promotion amount bill percent
-     input data amount bill percent
+#Test_case: input data promotion amount bill percent
+#     input data amount bill percent
 
+#Test_case: input data promotion amount buy one
+#     input data amount buy one
+
+#Test_case: input data promotion amount buy percent
+#     input data amount buy percent
+
+#Test_case: input data promotion amount free
+#     input data amount free
+
+#Test_case: input data promotion amount flash
+#     input data amount flash
+
+Test_case: input data promotion amount flash
+     input data amount flash amount
