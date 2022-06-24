@@ -18,6 +18,13 @@ Create_promotion:
 #   Flash sale
    radio_product: "xpath://span[contains(@class,'k-radio-label')]"
    input_amount_price: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByQuantityByPrice')]"
+   input_amount_percent: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByQuantityByPercent')]"
+   input_amount_bill:   "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByBillByPrice')]"
+   input_amount_bill_percent:    "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByBillByPercent')]"
+   input_amount_buy_one: "xpath://input[contains(id,'rdoModeOfPromotion_Action.Discount.CreateDiscountBuyOneGetOneByPrice')]"
+   input_amount_buy_percent:  "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountBuyOneGetOneByPercent')]"
+   input_amount_included: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountGiftProductsIncluded')]"
+   input_amount_flash: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountFlashSale')"
    button_continue: "xpath://button[contains(@id,'btnContinue')]"
    button_close:  "xpath://button[contains(@id,'btnCloseCreateTax')]"
    text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
@@ -35,11 +42,10 @@ Create_Product_Amount_Price:
    click_element_add_create: "xpath://tr[contains(@class,'k-master-row')]/td[1]"
    click_button_sl: "xpath://button[contains(@role,'button')]"
    text_sl: "xpath://tr[contains(@class,'k-master-row')]/td[2]/span"
-   input_number:  "xpath://input[contains(@id,'BuyQuantity')]/preceding-sibling::input"
-   input_discount_amount: "xpath://tr[contains(@class,'k-master-row k-grid-edit-row')]/td[2]/span/input[1]"
+#   input_number:  "xpath://input[contains(@id,'BuyQuantity')]/preceding-sibling::input"
+#   input_discount_amount: "xpath://tr[contains(@class,'k-master-row k-grid-edit-row')]/td[2]/span/input[1]"
    click_save: "xpath://a[contains(@id,'btnSave')]"
-
-
+Create_Product_Amount_percent:
 
 
 

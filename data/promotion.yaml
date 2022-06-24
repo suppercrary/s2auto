@@ -4,3 +4,38 @@ create_promotion_amount_price:
   end_date: "22/07/2022"
   number: "2.00"
   discount_amount: "1500000"
+
+create_promotion_amount_percent:
+  name_promotion: "mua sl giam tien pt"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
+
+create_promotion_amount_bill:
+  name_promotion: "hau tren hoa don tièn"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
+
+create_promotion_amount_bill_percent:
+  name_promotion: "dua tren hoa don pt"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
+
+create_promotion_amount_buy_one:
+  name_promotion: "xyz tien"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
+
+create_promotion_amount_buy_percent:
+  name_promotion: "xyz pt"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
+
+create_promotion_amount_included:
+  name_promotion: "tang kem"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
+
+create_promotion_amount_flash:
+  name_promotion: "flash sale"
+  start_date: "22/06/2022"
+  end_date: "22/07/2022"
