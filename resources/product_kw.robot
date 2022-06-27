@@ -65,16 +65,16 @@ input data amount free
     ${data}=                            set variable    ${create_promotion_amount_free}
     promotion amount free     ${data.name_promotion}  ${data.start_date}  ${data.end_date}
 
-input data amount flash
+input data price flash
     create promotion amount
     option promotion flash
     click continue
     ${data}=                            set variable    ${create_promotion_amount_flash}
     promotion amount flash price     ${data.name_promotion_price}  ${data.start_date}  ${data.end_date}
 
-input data amount flash amount
+input data percent flash
     create promotion amount
     option promotion flash
     click continue
     ${data}=                            set variable    ${create_promotion_amount_flash}
-    promotion amount flash amount     ${data.name_promotion_amount}  ${data.start_date}  ${data.end_date}
+    promotion amount flash percent     ${data.name_promotion_amount}  ${data.start_date}  ${data.end_date}
