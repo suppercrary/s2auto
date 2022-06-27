@@ -11,33 +11,37 @@ Test Setup       Run Keywords                           Navigate To Login Page
 Test Teardown    Close Browser
 
 *** Test Cases ***
-#Test_case1: in promotion
-#    in promotion
+Test_case1: in promotion
+    in promotion
 #Test_case2: Create in promotion
-#    create promotion amount price
-#Test_case3: input data promotion amount price
-#     input data amount price
+#    create promotion amount
+#
+Test_case3: input data promotion amount price
+    [Tags]      test
+     input data amount price
 
 #Test_case4: input data promotion amount percent
 #     input data amount percent
-
+#
 #Test_case: input data promotion amount bill
 #     input data amount bill
-
+#
 #Test_case: input data promotion amount bill percent
 #     input data amount bill percent
-
+#
 #Test_case: input data promotion amount buy one
 #     input data amount buy one
-
+#
 #Test_case: input data promotion amount buy percent
 #     input data amount buy percent
-
+#
 #Test_case: input data promotion amount free
 #     input data amount free
-
+#
 #Test_case: input data promotion amount flash
 #     input data amount flash
 
 Test_case: input data promotion amount flash
+
+
      input data amount flash amount

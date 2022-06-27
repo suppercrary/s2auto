@@ -8,23 +8,16 @@ Create_promotion:
    text_title_product: "xpath://h6[contains(@class,'title-panel-function border-bt')]"
    button_create: "xpath://a[contains(@id,'btnCreate')]"
    text_title_Create: "xpath://span[contains(@id,'wdnChooseDiscountType_wnd_title')]"
-#   Mua theo số lượng giảm giá: Theo giá
-#   Khuyến mãi dựa trên hóa đơn: Theo giá
-#   Mua X nhận Y với giá giảm Z: Theo giá
-#   Tặng sản phẩm đi kèm
-#   Mua theo số lượng giảm giá: Theo %
-#   Khuyến mãi dựa trên hóa đơn: Theo %
-#   Mua X nhận Y với giá giảm Z: Theo %
-#   Flash sale
+
    radio_product: "xpath://span[contains(@class,'k-radio-label')]"
-   input_amount_price: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByQuantityByPrice')]"
-   input_amount_percent: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByQuantityByPercent')]"
-   input_amount_bill:   "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByBillByPrice')]"
-   input_amount_bill_percent:    "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountByBillByPercent')]"
-   input_amount_buy_one:    "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountBuyOneGetOneByPrice')]"
-   input_amount_buy_percent:  "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountBuyOneGetOneByPercent')]"
-   input_amount_free: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountGiftProductsIncluded')]"
-   input_amount_flash: "xpath://input[contains(@id,'rdoModeOfPromotion_Action.Discount.CreateDiscountFlashSale')]"
+   input_amount_price: "xpath://input[contains(@id,'CreateDiscountByQuantityByPrice')]"
+   input_amount_percent: "xpath://input[contains(@id,'CreateDiscountByQuantityByPercent')]"
+   input_amount_bill:   "xpath://input[contains(@id,'CreateDiscountByBillByPrice')]"
+   input_amount_bill_percent:    "xpath://input[contains(@id,'CreateDiscountByBillByPercent')]"
+   input_amount_buy_one:    "xpath://input[contains(@id,'CreateDiscountBuyOneGetOneByPrice')]"
+   input_amount_buy_percent:  "xpath://input[contains(@id,'CreateDiscountBuyOneGetOneByPercent')]"
+   input_amount_free: "xpath://input[contains(@id,'CreateDiscountGiftProductsIncluded')]"
+   input_amount_flash: "xpath://input[contains(@id,'CreateDiscountFlashSale')]"
    button_continue: "xpath://button[contains(@id,'btnContinue')]"
    button_close:  "xpath://button[contains(@id,'btnCloseCreateTax')]"
    text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
@@ -33,14 +26,29 @@ Create_Product_Amount_Price:
    text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
    input_name_product: "xpath://input[contains(@id,'txtName')]"
    input_start_date: "xpath://input[contains(@id,'txtStartDate')]"
-#   click_button_start_date: "xpath://div[contains(@id,'startDate')]/span/button"
-#   option_start_date:
    input_end_date: "xpath://input[contains(@id,'txtEndDate')]"
-#   click_button_end_date:  "xpath://div[contains(@id,'endDate')]/span/button"
-#   option_end_date:
    click_button_add_create:   "xpath://button[contains(@id,'btnAddRow')]"
    click_element_add_create: "xpath://tr[contains(@class,'k-master-row')]/td[1]"
    click_button_sl: "xpath://button[contains(@role,'button')]"
+
+
+
+
+   button_increase_amount_buy_price: "xpath://td[contains(@data-container-for,'BuyQuantity')]/span/span/button[1]"
+   button_reduce_amount_buy_price: "xpath://td[contains(@data-container-for,'BuyQuantity')]/span/span/button[2]"
+
+   button_increase_price_after: "xpath://input[@id='DiscountAmount']/following-sibling::span/button[1]"
+   button_reduce_price_after: "xpath://input[@id='DiscountAmount']/following-sibling::span/button[2]"
+
+   button_increase_price_A: "xpath://input[contains(@id,'OnPriceA')]/following-sibling::span/button[1]"
+   button_reduce_price_A: "xpath://input[contains(@id,'OnPriceA')]/following-sibling::span/button[2]"
+
+   button_increase_price_B: "xpath://input[contains(@id,'OnPriceB')]/following-sibling::span/button[1]"
+   button_reduce_price_B: "xpath://input[contains(@id,'OnPriceB')]/following-sibling::span/button[2]"
+
+   button_increase_price_c: "xpath://input[contains(@id,'OnPriceB')]/following-sibling::span/button[1]"
+   button_reduce_price_c: "xpath://input[contains(@id,'OnPriceB')]/following-sibling::span/button[2]"
+
 
    option_start_hours: "xpath://ul[contains(@id,'StartTime_timeview')]/li[1]"
    option_end_hours: "xpath://ul[contains(@id,'EndTime_timeview')]/*[last()]"
@@ -48,7 +56,7 @@ Create_Product_Amount_Price:
    input_start_hours: "xpath://input[contains(@id,'StartTime')]"
    input_end_hours: "xpath://input[contains(@id,'EndTime')]"
 #   text_sl: "xpath://tr[contains(@class,'k-master-row')]/td[2]/span"
-#   input_number:  "xpath://input[contains(@id,'BuyQuantity')]/preceding-sibling::input"
+   input_number:  "xpath://input[contains(@id,'BuyQuantity')]/preceding-sibling::input"
 #   input_discount_amount: "xpath://tr[contains(@class,'k-master-row k-grid-edit-row')]/td[2]/span/input[1]"
    click_save: "xpath://a[contains(@id,'btnSave')]"
 Create_Product_Amount_percent:
