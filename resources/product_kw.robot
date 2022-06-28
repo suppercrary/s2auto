@@ -82,3 +82,12 @@ input data percent flash
     click continue
     ${data}=                            set variable    ${create_promotion_amount_flash}
     promotion amount flash percent     ${data.name_promotion_percent}  ${data.start_date}  ${data.end_date}
+
+check messenger
+    in product
+    Create promotion
+    option promotion price
+    click continue
+     ${data}=                           Set Variable         ${create_promotion_amount_price}
+    check mess    ${data.name_promotion}  ${data.start_date}  ${data.end_date}
+

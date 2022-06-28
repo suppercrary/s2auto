@@ -85,7 +85,8 @@ Create_Product_Amount_Price:
    check_run_time: "xpath://input[contains(@id,'discountByTime')][1]"
    click_start_hour: "xpath://button[contains(@aria-controls,'txtStartHour_timeview')]"
    click-end_hour:   "xpath://button[contains(@aria-controls,'txtEndHour_timeview')]"
-   option_start_hour: "xpath://"
+   option_start_hour: "xpath://ul[contains(@id,'txtStartHour_timeview')]/li[1]"
+   option_end_hour: "xpath://ul[contains(@id,'txtEndHour_timeview')]/* [last()]"
 
 
 
@@ -94,6 +95,19 @@ Create_Product_Amount_Price:
    mess_error_end_day: "xpath://span[contains(@id,'EndDate_valida')]"
    mess_error_price: "xpath://span[contains(@id,'DiscountAmount_valida')]"
    mess_error_amount: "xpath://span[contains(@id,'DiscountedQuantity_valida')]"
+   mess_error_start_hour: "xpath://span[contains(@id,'txtStartHour_valida')]"
+   mess_error_end_hour: "xpath://span[contains(@id,'txtEndHour_valida')]"
+
+
+   mess_start_end_day: "xpath://span[contains(@id,'endDate-GT-StartDate-Validate')]"
+   mess_start_end_time: "xpath://span[contains(@id,'endTime-GT-startTime-Validate')]"
+
+   title_cancel: "xpath://span[contains(@class,'k-window-title k-dialog-title')]"
+   click_confirm: "xpath://div[contains(@id,'dlgConfirmItem')]/following-sibling::div/button[1]"
+   click_cancels: "xpath://div[contains(@id,'dlgConfirmItem')]/following-sibling::div/button[2]"
+
+   mess_error_create: "xpath://div[contains(@class,'create-error')]"
+
 
 
 
