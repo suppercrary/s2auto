@@ -33,6 +33,10 @@ class CreateproductModel:
         self.driver.click_element(Create_promotion.get("button_create"))
         self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_Create"), timeout="30s")
 
+    def close_create(self):
+        self.driver.click_element(Create_promotion.get("button_close"))
+        self.driver.wait_until_page_contains_element(In_product.get("text_title_product"), timeout="20s")
+
     def option_promotion_price(self):
         sleep(1)
         self.driver.click_element(Create_promotion.get("input_amount_price"))
@@ -176,3 +180,6 @@ class CreateproductModel:
         self.driver.click_element(inputs_data.get("option_end_hours"))
         self.driver.click_element(inputs_data.get("option_amount"))
         self.driver.click_element(inputs_data.get("click_save"))
+
+
+

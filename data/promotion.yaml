@@ -37,6 +37,6 @@ create_promotion_amount_free:
 
 create_promotion_amount_flash:
   name_promotion_percent: "flash sale pt"
-  name_promotion_amount: "flash sale tien"
+  name_promotion_price: "flash sale tien"
   start_date: "22/06/2022"
   end_date: "22/07/2022"

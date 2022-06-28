@@ -22,6 +22,7 @@ Create_promotion:
    button_close:  "xpath://button[contains(@id,'btnCloseCreateTax')]"
    text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
 
+
 Create_Product_Amount_Price:
    text_title_product_amount_price: "xpath://h6[contains(@class,'title-panel-function')]"
    input_name_product: "xpath://input[contains(@id,'txtName')]"
@@ -29,10 +30,6 @@ Create_Product_Amount_Price:
    input_end_date: "xpath://input[contains(@id,'txtEndDate')]"
    click_button_add_create:   "xpath://button[contains(@id,'btnAddRow')]"
    click_element_add_create: "xpath://tr[contains(@class,'k-master-row')]/td[1]"
-   click_button_sl: "xpath://button[contains(@role,'button')]"
-
-
-
 
    button_increase_amount_buy_price: "xpath://td[contains(@data-container-for,'BuyQuantity')]/span/span/button[1]"
    button_reduce_amount_buy_price: "xpath://td[contains(@data-container-for,'BuyQuantity')]/span/span/button[2]"
@@ -71,8 +68,32 @@ Create_Product_Amount_Price:
    input_end_hours: "xpath://input[contains(@id,'EndTime')]"
    input_number:  "xpath://input[contains(@id,'BuyQuantity')]/preceding-sibling::input"
    click_save: "xpath://a[contains(@id,'btnSave')]"
-Create_Product_Amount_percent:
+   click_cancel: "xpath://a[contains(@id,'btnCancel')]"
+   click_delete: "xpath://button[contains(@id,'btn-delete-row')]"
 
+   input_description: "xpath://textarea[contains(@name,'Description')]"
+   check_price: "xpath://input[contains(@id,'swAmountLimit')]"
+   input_limit_price_increase: "xpath://input[contains(@id,'txtMaximumDiscountAmount')]/following-sibling::span/button[1]"
+   input_limit_price_reduce: "xpath://input[contains(@id,'txtMaximumDiscountAmount')]/following-sibling::span/button[1]"
+
+   check_amount: "xpath://input[contains(@id,'swQuantityLimit')]"
+   input_limit_amount_increase: "xpath://input[contains(@id,'MaximumDiscountedQuantity')]/following-sibling::span/button[1]"
+   input_limit_amount_reduce: "xpath://input[contains(@id,'MaximumDiscountedQuantity')]/following-sibling::span/button[1]"
+
+   check_odd_item: "xpath://input[contains(@id,'swDiscountOddItems')]"
+
+   check_run_time: "xpath://input[contains(@id,'discountByTime')][1]"
+   click_start_hour: "xpath://button[contains(@aria-controls,'txtStartHour_timeview')]"
+   click-end_hour:   "xpath://button[contains(@aria-controls,'txtEndHour_timeview')]"
+   option_start_hour: "xpath://"
+
+
+
+   mess_error_name: "xpath://span[contains(@id,'Name_valida')]"
+   mess_error_start_day: "xpath://span[contains(@id,'StartDate_valida')]"
+   mess_error_end_day: "xpath://span[contains(@id,'EndDate_valida')]"
+   mess_error_price: "xpath://span[contains(@id,'DiscountAmount_valida')]"
+   mess_error_amount: "xpath://span[contains(@id,'DiscountedQuantity_valida')]"
 
 
 

@@ -15,6 +15,10 @@ create promotion amount
     in product
     Create promotion
 
+close create promotion
+    in product
+    close create
+
 input data amount price
     in product
     Create promotion
@@ -77,4 +81,4 @@ input data percent flash
     option promotion flash
     click continue
     ${data}=                            set variable    ${create_promotion_amount_flash}
-    promotion amount flash percent     ${data.name_promotion_amount}  ${data.start_date}  ${data.end_date}
+    promotion amount flash percent     ${data.name_promotion_percent}  ${data.start_date}  ${data.end_date}
