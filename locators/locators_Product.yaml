@@ -97,6 +97,9 @@ Create_Product_Amount_Price:
    mess_error_amount: "xpath://span[contains(@id,'DiscountedQuantity_valida')]"
    mess_error_start_hour: "xpath://span[contains(@id,'txtStartHour_valida')]"
    mess_error_end_hour: "xpath://span[contains(@id,'txtEndHour_valida')]"
+   mess_error_buy_quantity: "xpath://span[contains(@id,'BuyQuantity_valida')]"
+   mess_error_quantity: "xpath://span[contains(@id,'DiscountedQuantity_valida')]"
+   mess_error_after_price: "xpath://span[contains(@id,'DiscountAmount_valida')]"
 
 
    mess_start_end_day: "xpath://span[contains(@id,'endDate-GT-StartDate-Validate')]"
