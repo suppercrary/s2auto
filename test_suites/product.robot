@@ -43,6 +43,4 @@ Test_case10: input data promotion price flash
 Test_case11: input data promotion percent flash
      input data percent flash
 
-Test_case12: check mess save
-    [Tags]    test
-    check messenger
+

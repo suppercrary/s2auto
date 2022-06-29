@@ -108,6 +108,8 @@ Create_Product_Amount_Price:
 
    mess_error_create: "xpath://div[contains(@class,'create-error')]"
 
+   mess_success_create: "xpath://div[contains(@class,'create-success')]"
+
 
 
 
