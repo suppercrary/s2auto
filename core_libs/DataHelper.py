@@ -14,6 +14,9 @@ url_data_choose = f"{path}{os.sep}locators{os.sep}locators_ChooseStore.yaml"
 locators_choose = read_yaml(url_data_choose)
 url_data_product = f"{path}{os.sep}locators{os.sep}locators_Product.yaml"
 locators_product = read_yaml(url_data_product)
+url_data_discount = f"{path}{os.sep}locators{os.sep}locators_Discount.yaml"
+locators_discount = read_yaml(url_data_discount)
+
 
 c_path = f"{path}{os.sep}data{os.sep}common.yaml"
 common_data = read_yaml(c_path)
