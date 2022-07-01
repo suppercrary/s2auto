@@ -16,7 +16,9 @@ create promotion amount
     Create promotion
 
 close create promotion
+    [Tags]    test
     in product
+    Create promotion
     close create
 
 input data amount price
@@ -25,9 +27,33 @@ input data amount price
     option promotion price
     click continue
      ${data}=                           Set Variable         ${create_promotion_amount_price}
-    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}  ${data.number}  ${data.discount_amount}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}
     click save
     create_success
+
+fail no time
+    in product
+    Create promotion
+    option promotion price
+    click continue
+    check time
+     ${data}=                           Set Variable         ${create_promotion_amount_price}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}
+    click save
+    mess error start hour
+    mess error end hour
+
+fail end date than start date or start date more now
+    in product
+    Create promotion
+    option promotion price
+    click continue
+     ${data}=                           Set Variable         ${create_promotion_amount_price}
+    input name    ${data.name_promotion}
+    input start date    ${data.start_date}
+    input end date    ${data.end_date1}
+    click save
+    mess start end date
 
 fail no input all field
     create promotion amount
@@ -86,7 +112,8 @@ faile no limit amount
     click continue
     check limit amount
      ${data}=                           Set Variable         ${create_promotion_amount_price}
-    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}  ${data.number}  ${data.discount_amount}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}
+    click save
     mess limit amount
 
 faile no limit price
@@ -96,7 +123,8 @@ faile no limit price
     click continue
     check limit price
      ${data}=                           Set Variable         ${create_promotion_amount_price}
-    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}  ${data.number}  ${data.discount_amount}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}
+    click save
     mess limit price
 
 input data amount percent
@@ -165,7 +193,7 @@ percent faile no limit amount
     click continue
     check limit amount
      ${data}=                           Set Variable         ${create_promotion_amount_percent}
-    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}  ${data.number}  ${data.discount_amount}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}
     click save
     mess limit amount
 
@@ -176,7 +204,7 @@ percent faile no limit price
     click continue
     check limit price
      ${data}=                           Set Variable         ${create_promotion_amount_percent}
-    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}  ${data.number}  ${data.discount_amount}
+    promotion amount price  ${data.name_promotion}  ${data.start_date}  ${data.end_date}
     click save
     mess limit price
 
@@ -313,6 +341,7 @@ input data amount buy percent
     click continue
     ${data}=                            set variable    ${create_promotion_amount_buy_percent}
     promotion amount buy percent     ${data.name_promotion}  ${data.start_date}  ${data.end_date}
+    click save
     create_success
 
 input data amount free
@@ -370,7 +399,7 @@ free faile no limit amount
     click continue
     check limit amount
      ${data}=                           Set Variable         ${create_promotion_amount_free}
-    promotion amount bill percent     ${data.name_promotion}  ${data.start_date}  ${data.end_date}
+    promotion amount free     ${data.name_promotion}  ${data.start_date}  ${data.end_date}
     click save
     mess limit amount
 
@@ -461,4 +490,5 @@ flash faile no limit price
     check limit price
      ${data}=                           Set Variable         ${create_promotion_amount_flash}
     promotion amount flash price    ${data.name_promotion_price}  ${data.start_date}  ${data.end_date}
+    click save
     mess limit price

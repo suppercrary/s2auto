@@ -18,6 +18,7 @@ Test_case2: Create in promotion
     create promotion amount
 
 Test_case3: close create
+
      close create promotion
 
 Test_case4:
@@ -37,6 +38,7 @@ Test_case8:
 
 Test_case9:
     faile no protion
+
 Test_case10:
     faile no limit amount
 
@@ -152,14 +154,12 @@ Test_case47:
     flash faile no limit price
 
 Test_case48:
+    fail no time
 
 Test_case49:
+    fail end date than start date or start date more now
 
-Test_case50:
 
-Test_case51:
-
-Test_case52:
 
 
 

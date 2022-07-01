@@ -30,10 +30,12 @@ class CreateproductModel:
         self.driver.wait_until_page_contains_element(In_product.get("text_title_product"), timeout="20s")
 
     def create_promotion(self):
+        self.driver.wait_until_element_is_visible(Create_promotion.get("button_create"))
         self.driver.click_element(Create_promotion.get("button_create"))
         self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_Create"), timeout="30s")
 
     def close_create(self):
+        self.driver.wait_until_element_is_visible(Create_promotion.get("button_close"), timeout="50s")
         self.driver.click_element(Create_promotion.get("button_close"))
         self.driver.wait_until_page_contains_element(In_product.get("text_title_product"), timeout="20s")
 
@@ -74,7 +76,7 @@ class CreateproductModel:
         self.driver.click_button(Create_promotion.get("button_continue"))
         self.driver.wait_until_page_contains_element(Create_promotion.get("text_title_product_amount_price"), timeout="30s")
 
-    def promotion_amount_price(self, nameproduct, startdate, enddate, number, discountamount):
+    def promotion_amount_price(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
         self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
         self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
@@ -85,8 +87,6 @@ class CreateproductModel:
         self.driver.double_click_element(inputs_data.get("button_increase_amount_buy_price"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_percent(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
@@ -99,8 +99,6 @@ class CreateproductModel:
         self.driver.double_click_element(inputs_data.get("button_increase_amount_buy_price"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_bill(self, nameproduct, startdate, enddate):
 
@@ -112,11 +110,8 @@ class CreateproductModel:
         self.driver.double_click_element(inputs_data.get("button_increase_price_bill"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_bill_percent(self, nameproduct, startdate, enddate):
-
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
         self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
         self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
@@ -125,8 +120,6 @@ class CreateproductModel:
         self.driver.double_click_element(inputs_data.get("button_increase_price_bill"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_buy_one(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
@@ -136,8 +129,6 @@ class CreateproductModel:
         self.driver.click_element(inputs_data.get("button_increase_amount_buy"))
         self.driver.double_click_element(inputs_data.get("button_increase_amount_get"))
         self.driver.double_click_element(inputs_data.get("button_increase_price"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_buy_percent(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
@@ -147,16 +138,12 @@ class CreateproductModel:
         self.driver.click_element(inputs_data.get("button_increase_amount_buy"))
         self.driver.double_click_element(inputs_data.get("button_increase_amount_get"))
         self.driver.double_click_element(inputs_data.get("button_increase_price"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_free(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
         self.driver.input_text(inputs_data.get("input_name_product"), nameproduct, )
         self.driver.input_text(inputs_data.get("input_start_date"), startdate, )
         self.driver.input_text(inputs_data.get("input_end_date"), enddate, )
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_flash_price(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
@@ -171,8 +158,6 @@ class CreateproductModel:
         self.driver.click_element(inputs_data.get("button_end_time"))
         self.driver.click_element(inputs_data.get("option_end_hours"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
-        self.driver.click_element(inputs_data.get("click_save"))
-
 
     def promotion_amount_flash_percent(self, nameproduct, startdate, enddate):
         self.driver.wait_until_page_contains_element(inputs_data.get("text_title_product_amount_price"), timeout="30s")
@@ -188,7 +173,7 @@ class CreateproductModel:
         self.driver.click_element(inputs_data.get("option_end_hours"))
         self.driver.click_element(inputs_data.get("option_amount"))
         self.driver.double_click_element(inputs_data.get("button_increase_price_after"))
-        self.driver.click_element(inputs_data.get("click_save"))
+
 
     def input_name(self, nameproduc):
         self.driver.input_text(inputs_data.get("input_name_product"), nameproduc, )
@@ -274,9 +259,11 @@ class CreateproductModel:
     def mess_error_end_hour(self):
         self.driver.wait_until_element_is_visible(inputs_data.get("mess_error_end_hour"), timeout="30s")
 
-    # def mess_start_end_date(self):
-    #
-    # def mess_strt_end_time(self):
+    def mess_start_end_date(self):
+        self.driver.wait_until_element_is_visible(inputs_data.get("mess_start_end_day"), timeout="10s")
+
+    def mess_start_end_time(self):
+        self.driver.wait_until_element_is_visible(inputs_data.get("mess_start_end_time"))
 
     def create_success(self):
         self.driver.wait_until_element_is_visible(inputs_data.get("mess_success_create"), timeout="10s")
@@ -285,6 +272,7 @@ class CreateproductModel:
         self.driver.wait_until_element_is_visible(inputs_data.get("mess_error_create"), timeout="10s")
 
     def click_save(self):
+        self.driver.wait_until_element_is_visible(inputs_data.get("click_save"), timeout="10s")
         self.driver.click_element(inputs_data.get("click_save"))
 
 
